@@ -1,0 +1,22 @@
+.spark_border {
+    width: 80%;
+    max-height: 5%;
+    border-radius: 5px;
+}
+
+.spark_text {
+    max-width: 90%;
+}
+
+.user-spark {
+    border-color: rgb(0, 255, 157);
+}
+
+.spark_options {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-body {
+    white-space: pre-line;
+}

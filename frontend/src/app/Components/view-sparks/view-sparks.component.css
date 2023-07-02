@@ -1,0 +1,27 @@
+.filter {
+    text-align: right;
+}
+
+.filter_item {
+    margin-left: 20px;
+}
+
+.select {
+    max-width: fit-content;
+    margin-left: 5px;
+}
+
+.view_more {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.page_select {
+    margin: 0 auto;
+}
+
+.sparkList{
+    max-height: 750px;
+    overflow-y: scroll;
+}

@@ -1,0 +1,45 @@
+<h1>Find Sparks</h1>
+
+<div class="filter">
+  <div class="d-inline">
+    <label for="exampleSelect1" class="filter_item form-label mt-4">Sort By:</label>
+    <select class="select form-select d-inline" id="selectSort" [(ngModel)]="selectedSortOption"
+      (change)="onSortOptionChange()" name="selectSort">
+      <option value="most-supports">most supports</option>
+      <option value="latest">latest</option>
+    </select>
+  </div>
+
+  <div class="d-inline">
+    <label for="exampleSelect1" class="filter_item form-label mt-4">Filter:</label>
+    <select class="select form-select d-inline" id="selectSort" [(ngModel)]="selectedFilterOption"
+      (change)="onFilterOptionChange()" name="selectFilter">
+      <option value="my-sparks">my sparks</option>
+      <option value="all-sparks">all sparks</option>
+    </select>
+  </div>
+</div>
+
+<hr>
+
+<div class="alert alert-danger alert-dismissible" *ngIf="errorMessage != null" style="margin-top: 5px;">
+  {{errorMessage}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" (click)="errorMessage = null"></button>
+</div>
+
+<div class="sparkList">
+  <ng-container *ngFor="let spark of listOfSparks">
+    <app-spark-card [spark]="spark" (editSpark)="receiveEditSpark($event)"></app-spark-card>
+  </ng-container>
+</div>
+
+<hr>
+
+<div *ngIf="userIsLoggedIn()">
+  <app-new-spark *ngIf="!editSpark"></app-new-spark>
+  <app-edit-spark *ngIf="editSpark" [spark]="editSpark" (editSpark)="receiveEditSpark($event)"></app-edit-spark>
+</div>
+
+<br>
+<br>
+<br>

@@ -1,0 +1,12 @@
+.spark_content {
+    height: 200px;
+}
+
+.spark_description {
+    height: 100px;
+}
+
+.spark_border {
+    border: 2px solid rgb(118, 76, 0);
+    padding: 10px;
+}

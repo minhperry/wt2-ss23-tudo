@@ -1,0 +1,25 @@
+.frontImage{
+    width: 75%;
+    margin-top: 5%
+}
+
+.headline{
+    font-size: 50px;
+}
+
+.mainButton{
+    margin: 20px;
+    margin-top: 5%;
+}
+
+.about_title{
+    margin-top: 7%;
+}
+
+.about{
+    margin-top: 1%;
+}
+
+.arrow{
+    width: 10%;
+}

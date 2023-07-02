@@ -1,0 +1,31 @@
+<div style="text-align: center; margin-top: 5%;">
+    <h1 class="headline"> WELCOME TO </h1>
+    <img class="frontImage" [src]="logoUrl">
+    
+    <div>
+        <button type="button" class="mainButton btn btn-primary" routerLink="/view-sparks">View Sparks</button>
+        <button type="button" class="mainButton btn btn-outline-primary" routerLink="/register" *ngIf="!userIsLoggedIn()">Get started</button>
+        <button type="button" class="mainButton btn btn-outline-primary" routerLink="/login" *ngIf="!userIsLoggedIn()">Login</button>
+    </div>
+    
+    <h2 class="about_title">WHAT IS LUMINARY?</h2>
+
+    <img class="arrow" [src]="arrowUrl">
+
+    <div class="about">
+        Luminary is a revolutionary social media platform that empowers individuals to share their everyday creative ideas and needs, <br> 
+        fostering innovation and driving positive change in our world. <br> 
+        With Luminary, you have the power to transform mere thoughts into tangible realities.
+        <br>
+        <br>
+        Luminary is a hub of collective intelligence and collaboration. <br>
+        It welcomes ideas from various domains, be it architecture, technology, entertainment, or any other realm where creativity thrives. <br>
+        As you share your ideas, they gain traction through likes, comments, and endorsements from fellow users <br>
+        who recognize their value and potential.
+    </div>
+
+    <button type="button" class="btn btn-secondary" routerLink="/about-us">read more</button>
+    <br>
+    <br>
+
+</div>

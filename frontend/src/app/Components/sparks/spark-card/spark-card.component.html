@@ -1,0 +1,14 @@
+<div class="spark_border card mb-3" *ngIf="!isDeleted" [ngClass]="{'border-success': isUserCreator(), 'user-spark': isUserCreator()}">
+    <div class="card-header">{{ spark.creator.username }}</div>
+    
+    <div class="card-body">
+        {{ spark.content }}
+    </div>
+
+    <div class="spark_options">
+        <div *ngIf="isUserAdmin() || isUserCreator()"><button class="btn btn-secondary"  (click)="deleteSpark()">🗑️</button></div>
+        <div *ngIf="isUserCreator()"><button class=" btn btn-secondary"  (click)="emitEditSpark()">✏️</button></div>
+        <div><button class=" btn btn-secondary" (click)="weightSpark()"> 🔥 {{ spark.lightCount }} </button></div>
+    </div>
+</div>
+  

@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+.page-header{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 45px;
+}
+
+.btn-back{
+    text-align: center;
+    margin-top: 2%;
+}
+
+/* FORM STYLES */
+
+.form-field{
+    margin-top: 0.5%;
+}
+
+.form-lable{
+    margin-top: 1%;
+}

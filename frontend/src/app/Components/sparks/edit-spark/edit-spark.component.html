@@ -1,0 +1,20 @@
+<form class="form-group has-danger" (submit)="onSubmit()">
+
+    <div class="spark_border">
+        <div class="cancel_button">
+            <button class="btn-close" (click)="emitCancelEditSpark()"></button>
+        </div>
+
+        <div class="form-lable">
+            <textarea class="form-control spark_content" id="textArea" [(ngModel)]="spark.content" name="content"></textarea>
+        </div>
+
+    </div>
+
+    <input type="submit" class="btn btn-warning form-lable" value="redefine your Spark!">
+    
+    <div class="alert alert-danger alert-dismissible" *ngIf="errorMessage != null" style="margin-top: 5px;">
+        {{errorMessage}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" (click)="errorMessage = null"></button>
+    </div>
+</form>

@@ -1,0 +1,13 @@
+<h2 class="page-header" style="margin-bottom: 20px">Login</h2>
+
+<form (submit)="onLoginSubmit()">
+    <div class="form-group form-lable">
+        <label> Username </label>
+        <input type="text" class="form-control form-field" id="usernameField" name="username" placeholder="Enter Username" [(ngModel)]="userAuth.username">
+    </div>
+    <div class="form-group form-lable">
+        <label>Password</label>
+        <input type="password" class="form-control form-field" id="passwordField" name="password" placeholder="Enter Password" [(ngModel)]="userAuth.password">
+    </div>
+    <input type="submit" class="btn btn-primary form-lable" value="Login">
+</form>

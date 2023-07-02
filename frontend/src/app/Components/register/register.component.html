@@ -1,0 +1,22 @@
+<div>
+    <h2 class="page-header">Register</h2>
+    
+    <form class="form-group has-danger" (submit)="onRegisterSubmit()">
+        <div class="form-lable">
+            <label>Name</label>
+            <input type="text" name="name" class="form-control form-field" id="nameField" [(ngModel)]="newUser.name">
+        </div>
+
+        <div class="form-lable">
+            <label>Username</label>
+            <input type="text" name="username" class="form-control form-field" id="usernameField" [(ngModel)]="newUser.username">
+        </div>
+
+        <div class="form-lable">
+            <label>Password</label>
+            <input type="password" class="form-control form-field" name="password" id="passwordField" [(ngModel)]="newUser.password">
+        </div>
+        
+        <input type="submit" class="btn btn-primary form-lable" value="register">
+    </form>
+</div>
